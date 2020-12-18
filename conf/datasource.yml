@@ -1,0 +1,30 @@
+#数据库配置
+databases:
+    -   driver: mysql
+        nodes:
+            database: usercenter
+            host: 127.0.0.1  #要是跑在laraDock里，要把host改成mysql
+            port: 3306
+            #      url: '@tcp(mysql:3306)/usercenter?charset=utf8&parseTime=True&loc=Local'  #注意这个url和官网给的不一样，因为改过了
+            #url: '@tcp(127.0.0.1:3306)/usercenter?charset=utf8&parseTime=True&loc=Local'  #注意这个url和官网给的不一样，因为改过了
+            username: root
+            password: 123456
+            max-open-conns: 200
+            max-idle-conns: 100
+            show-sql: true
+            #全局设置表名不可以为复数形式
+            singular-table: true
+    -   driver: mysql
+        nodes:
+            database: bingo_mall
+            host: 127.0.0.1 #要是跑在laraDock里，要把host改成mysql
+            port: 3306
+            #      url: '@tcp(mysql:3306)/bingo_mall?charset=utf8&parseTime=True&loc=Local'  #注意这个url和官网给的不一样，因为改过了
+            #url: '@tcp(127.0.0.1:3306)/bingo_mall?charset=utf8&parseTime=True&loc=Local'  #注意这个url和官网给的不一样，因为改过了
+            username: root
+            password: 123456
+            max-open-conns: 200
+            max-idle-conns: 100
+            show-sql: true
+            #全局设置表名不可以为复数形式
+            singular-table: true

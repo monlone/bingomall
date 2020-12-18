@@ -1,0 +1,18 @@
+server:
+    addr: 0.0.0.0:8088
+    read-timeout: 60
+    write-timeout: 60
+    idle-timeout: 300
+    max-header-bytes: 10485760
+
+gin:
+    #运行模式 "debug", "release" , "test"
+    #    run-mode: release 写到env文件里了
+
+    #是否开启请求方式检测
+    handle-method-not-allowed: true
+    #设置请求占用最大空间 10mb
+    max-multipart-memory: 10485760
+
+wechat:
+    wechat-pay-api-client-cert: "cert/wechat/apiclient_cert.p12"

@@ -1,0 +1,40 @@
+package constant
+
+const (
+	WxAppId           = "wx3128b1999999999"                                           // app支付
+	WxAppSecret       = "a2c1db938eaaaaaaaaaaff75db"                             // app支付密钥
+	Oauth2RedirectURI = "http://localhost:8088/api/wechat/exchange_token"              // 填上自己的参数
+	Oauth2Scope       = "snsapi_userinfo"                                              // 填上自己的参数
+	Domain            = "timesweb.cn"                                    //cookie 的域名
+	WxApiKey          = "lianXiWoMenDaZheYunFuWuQi"                             //WX_API_KEY（商户平台APIkey）
+	MchID             = "1490000000"                                                   //MCH_ID
+	WechatPayCallback = "http://timesweb.cn/api/app/wechat_pay/callback" //微信支付回调接口
+
+	DBMerchant = "bingo_mall"
+	DBUser     = "usercenter"
+)
+
+const (
+	MPWechatAppId = "wxcddf68888888888" //微信公众号appid
+	MPWxAppSecret = "caaaaaaaccfdfdfqegdcjblcznvcl"
+	MPWxApiKey    = "a2c1db938eaaaaaaaaaaff75db"
+	//MPWechatAppId    = "a2c1db938eadfjaaff75db"               //微信测试公众号appid
+	//MPWxAppSecret    = "a2c1db938eackoioiaff75db" //微信测试公众号appsecret
+	MPWxAPPToken             = "goodCornCom2424"
+	MPOauth2Scope            = "snsapi_userinfo"
+	MPWechatCallback         = "http://timesweb.cn/api/web/mpcallback"   //微信公众号回调接口,control.WechatMPCallBack
+	MerchantMPWechatCallback = "http://timesweb.cn/api/web/mpmerchantcb" //商户注册微信公众号回调接口
+)
+
+const (
+	JumpUrl = "http://timesweb.cn/download/index.html" //下载页面
+)
+
+const (
+	WechatAppId     = "wxc35fe692343rk42fj"               //微信小程序测试appid
+	WechatAppSecret = "8d7fa18d0ce2iu2934909vs4" //微信小程序测试appsecret
+)
+
+const (
+	WechatUserInfoUrl = "https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code"
+)

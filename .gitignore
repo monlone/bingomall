@@ -1,0 +1,14 @@
+docs/swagger.json
+docs/docs.go
+docs/swagger.yaml
+.env
+.idea/*
+logs/*
+logs/sql.log
+logs/access.log
+logs/error.log
+go.mod
+go.sum
+cert/*
+constant/wechat.go
+vendor
